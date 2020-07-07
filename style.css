@@ -1,0 +1,214 @@
+:root {
+    --max-width: 800px;
+    --primary-color: rgb(0, 167, 139);
+    --accent-color: rgb(221, 169, 0);
+    --border-radius: 4px;
+    --primary-gray: #888;
+    --accent-gray: #ccc;
+    --form-input-color: #ddd;
+}
+
+body {
+    margin: 0;
+    padding: 0 12px;
+    max-width: var(--max-width);
+    margin: 24px auto;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #eee;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0 0;
+    font-family: 'Noto Serif', serif;
+    font-weight: bold;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 12px 0;
+    padding: 0;
+}
+
+hr {
+    border: 0;
+    border-top: 1px var(--accent-gray) solid;
+    margin: 12px 0;
+}
+
+hr.invisible {
+    border: 0;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: var(--primary-color);
+    color: white;
+    border: 0;
+    border-radius: var(--border-radius);
+}
+
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+button:active {
+    opacity: 0.7;
+}
+
+input {
+    padding: 8px 12px;
+    background-color: var(--form-input-color);
+    border: 0;
+    border-radius: var(--border-radius);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.stretch {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.align-baseline {
+    align-items: baseline;
+}
+
+.card-container {
+    margin: 0 -4px;
+}
+
+.card {
+    margin: 4px;
+    padding: 4px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+.overflow-y {
+    overflow-y: auto;
+}
+
+.card-title {
+    text-transform: uppercase;
+    color: var(--primary-gray);
+    text-align: center;
+    margin: 12px 0;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.card-image {
+    width: 100%;
+}
+
+.card-image img {
+    width: 100%;
+}
+
+.card-image.full {
+    width: 100%;
+    margin: 12px -4px;
+}
+
+.card-image.full img {
+    width: calc(100% + 8px);
+}
+
+.card-body {
+    margin: 12px;
+}
+
+.grid {
+    max-width: 100%;
+    flex-grow: 1;
+}
+
+.grid-2 {
+    min-width: calc(var(--max-width) / 2);
+    flex-basis: 50%;
+    max-width: 100%;
+    flex-grow: 1;
+}
+
+.grid-3 {
+    min-width: calc(var(--max-width) / 3);
+    flex-basis: 33%;
+    max-width: 100%;
+    flex-grow: 1;
+}
+
+.grid-4 {
+    min-width: calc(var(--max-width) / 4);
+    flex-basis: 25%;
+    max-width: 100%;
+    flex-grow: 1;
+}
+
+table, table tr, table tr td {
+    border: 0;
+    padding: 8px;
+    border-collapse: collapse;
+}
+
+table.full tr td:first-child {
+    padding-left: 0;
+}
+
+table.full tr td:last-child {
+    padding-right: 0;
+}
+
+table {
+    width: 100%;
+}
+
+table,
+table tr,
+table tr td {
+    border: 1px 0 var(--accent-gray) solid;
+}
+
+table.header thead tr td {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    font-size: 10pt;
+    white-space: nowrap;
+}
+
+table.no-border,
+table.no-border tr,
+table.no-border tr td {
+    border: 0;
+}
+
+table input {
+    width: calc(100% - 24px);
+}

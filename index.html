@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox - examples</title>
+        <meta charset="utf-8"> 
+        <link href="style.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <h1>Flexbox — examples</h1>
+        <p>
+            This demo illustrates how to use flexbox to create pages that are
+            responsive by design.
+        </p>
+        <h2>Flexbox direction — horizontal</h2>
+        <div class="flex flex-wrap card-container">
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-title">Sunset ocean</div>
+                    <div class="card-image full">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F07%2FFull-HD-Wallpaper-1080p-Download.jpg&f=1&nofb=1" />
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Mauris a commodo metus.
+                        </p>
+                        
+                        <div class="flex align-baseline">
+                            <button>Buy</button>
+                            <div class="flex-grow"></div>
+                            <span>$102.56</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-title">Fjord</div>
+                    <div class="card-image full">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperxyz.com%2Fwp-content%2Fuploads%2FFull-HD-1080p-Desktop-Wallpapers-HD-1920x1080-Wallpaperxyz.com-21.jpg&f=1&nofb=1" />
+                    </div>
+                    <div class="card-body">
+                        Duis quis suscipit mi. 
+                        <hr />
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                </div>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-title">Nightlife</div>
+                    <div class="card-image full">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.bingwallpaperhd.com%2Fwp-content%2Fuploads%2F2018%2F12%2FCologneDom.jpg&f=1&nofb=1" />
+                    </div>
+                    <div class="card-body">
+                        Suspendisse nec risus venenatis, maximus enim interdum, aliquam velit. 
+                        Nam vitae sem quis diam tempor pretium.
+                    </div>
+                </div>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-title">Lost in space</div>
+                    <div class="card-image full">
+                        <img src="https://images3.alphacoders.com/984/thumb-1920-984559.jpg" />
+                    </div>
+                    <div class="card-body">
+                        Suspendisse nec risus venenatis, maximus enim interdum, aliquam velit. 
+                        Nam vitae sem quis diam tempor pretium.
+                        <hr />
+                        <button class="stretch">This is a large button</button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-title">Dragonfire</div>
+                    <div class="card-image full">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.-VeP9dTWv3GF57TQ9WDMsQHaD5%26pid%3DApi&f=1" />
+                    </div>
+                    <div class="card-body">
+                        Suspendisse nec risus venenatis, maximus enim interdum, aliquam velit. 
+                        Nam vitae sem quis diam tempor pretium.
+                        <hr class="invisible" />
+                        <div class="overflow-y">
+                            <table class="header no-border full">
+                                <thead>
+                                    <tr>
+                                        <td>Column 1</td>
+                                        <td>Column 2</td>
+                                        <td>Column 3</td>
+                                        <td>Column 4</td>
+                                        <td>Column 5</td>
+                                        <td>Column 6</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Text</td>
+                                        <td>Text</td>
+                                        <td>Text</td>
+                                        <td>Text</td>
+                                        <td>Text</td>
+                                        <td>Text</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Text</td>
+                                        <td>Text</td>
+                                        <td>Text</td>
+                                        <td>Text</td>
+                                        <td>Text</td>
+                                        <td>Text</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2>Form components</h2>
+        <div class="flex flex-wrap card-container">
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-title">
+                        Simple form (row)
+                    </div>
+                    <div class="card-body">
+                        <table class="full no-border">
+                            <tr>
+                                <td>Username</td>
+                                <td>
+                                    <input type="text" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Password</td>
+                                <td>
+                                    <input type="password" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Remember me</td>
+                                <td>
+                                    <input type="checkbox" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button class="stretch">Login</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-2">
+                <div class="card">
+                    <div class="card-title">
+                        Simple form (column)
+                    </div>
+                    <div class="card-body">
+                        <table class="full no-border">
+                            <tr>
+                                <td>Username</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Password</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="password" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="stretch">Login</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2>Tables</h2>
+        <div class="flex flex-wrap card-container">
+            <div class="grid">
+                <div class="card">
+                    <div class="card-title">Table example</div>
+                    <div class="card-body overflow-y">
+                        <table class="header">
+                            <thead>
+                                <tr>
+                                    <td>Column 1</td>
+                                    <td>Column 2</td>
+                                    <td>Column 3</td>
+                                    <td>Column 4</td>
+                                    <td>Column 5</td>
+                                    <td>Column 6</td>
+                                    <td>Column 7</td>
+                                    <td>Column 8</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Text</td>
+                                    <td>Text</td>
+                                    <td>Text</td>
+                                    <td>Text</td>
+                                    <td>Text</td>
+                                    <td>Text</td>
+                                    <td>Text</td>
+                                    <td>Text</td>
+                                </tr>
+                                <tr>
+                                    <td>Text</td>
+                                    <td>Text</td>
+                                    <td>Text</td>
+                                    <td>Text</td>
+                                    <td>Text</td>
+                                    <td>Text</td>
+                                    <td>Text</td>
+                                    <td>Text</td>
+                                </tr>
+                                <tr>
+                                    <td>Text</td>
+                                    <td>Text</td>
+                                    <td>Text</td>
+                                    <td>Text</td>
+                                    <td>Text</td>
+                                    <td>Text</td>
+                                    <td>Text</td>
+                                    <td>Text</td>
+                                </tr>
+                                <tr>
+                                    <td>Text</td>
+                                    <td>Text</td>
+                                    <td>Text</td>
+                                    <td>Text</td>
+                                    <td>Text</td>
+                                    <td>Text</td>
+                                    <td>Text</td>
+                                    <td>Text</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
